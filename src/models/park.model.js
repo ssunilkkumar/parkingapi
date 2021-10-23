@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require("dotenv").config()
 
-const number = process.env.SLOT || 5;
+const number = process.env.SLOT;
 
 const parkSchema = new mongoose.Schema({
     car: {type: String, required: true},

@@ -2,7 +2,7 @@ const express = require ("express");
 const router = express.Router();
 require("dotenv").config()
 
-const num = process.env.SLOT || 5;
+const num = process.env.SLOT;
 
 const Slot = require ("../models/Slot.model")
 
