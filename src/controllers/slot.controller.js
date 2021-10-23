@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
     try{
         const slot = await Slot.create({capacity: num});
-        console.log(slot)
+        //console.log(slot)
         return res.status(201).json({data: slot})
     } catch (err) {
         res.status(400).json({message: "slot already exit"})

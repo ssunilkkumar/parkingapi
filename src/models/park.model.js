@@ -5,8 +5,8 @@ const number = process.env.SLOT
 
 const parkSchema = new mongoose.Schema({
     car: {type: String, required: true},
-    slot : {type: String, required: true},
-    slotID: {type: String, required: true, default: number}
+    slot : {type: Number, required: true},
+    slotID: {type: String, required: false, default: number}
 }, {
     versionKey: false,
     timestamps: true
