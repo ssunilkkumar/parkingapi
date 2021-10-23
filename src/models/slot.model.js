@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require("dotenv").config()
 
-const number = process.env.SLOT
+const number = process.env.sample.SLOT
 
 const slotSchema = new mongoose.Schema({
     capacity: {type: Number, required: true, default: number, unique: true},
